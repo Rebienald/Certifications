@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #555;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 10px 20px; /* Reduced height */
+    background: #a8aaad;
+    color: white;
+    position: relative;
+}
+#header{
+    margin-top: 10vh;
+}
+#toggle-mode {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.cert-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+h2{
+    text-align: center;
+}
+.cert-card:hover {
+    transform: translateY(-5px);
+}
+
+.dark-mode .cert-card {
+    background: #222;
+}
